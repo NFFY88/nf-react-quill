@@ -1,0 +1,53 @@
+{
+  "name": "nf-react-quill",
+  "version": "0.0.1",
+  "description": "The Quill rich-text editor as a React component.",
+  "type": "module",
+  "source": "src/index.tsx",
+  "exports": {
+    "types": "./dist/index.d.ts",
+    "require": "./dist/index.cjs",
+    "default": "./dist/index.esm.js"
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.esm.js",
+  "unpkg": "./dist/index.umd.js",
+  "types": "./dist/index.d.ts",
+  "files": [ "dist" ],
+  "scripts": {
+    "build": "microbundle --jsx React.createElement --jsxFragment React.Fragment --jsxImportSource react --globals react/jsx-runtime=jsx",
+    "dev": "microbundle watch",
+    "test": "npm run test:unit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NFFY88/nf-react-quill.git"
+  },
+  "keywords": [
+    "editable",
+    "editor",
+    "quill",
+    "react",
+    "react-component",
+    "rich",
+    "rich-text",
+    "rich-text-editor",
+    "textarea",
+    "text",
+    "text-editor",
+    "wysiwyg"
+  ],
+  "author": "Danil Buslaev",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/NFFY88/nf-react-quill/issues"
+  },
+  "homepage": "https://github.com/NFFY88/nf-react-quill#readme",
+  "peerDependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  },
+  "devDependencies": {
+    "microbundle": "^0.15.1"
+  }
+}
